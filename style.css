@@ -34,7 +34,6 @@ body {
     border-radius: 20px;
 }
 
-
 /* meal card */
 #card {
     background-color: #FF3044;
@@ -46,7 +45,6 @@ body {
 #card img {
     border-radius: 50%;
 }
-
 
 /* meal details container */
 #meal-details{
@@ -75,9 +73,6 @@ body {
     margin: auto;
     text-align: center;
 }
-
-
-
 
 /* favourites offcanvus */
 #favourites-body{
