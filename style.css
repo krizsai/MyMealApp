@@ -15,16 +15,35 @@ body {
 
 /* header heading section */
 #heading {
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
+.nav-bar-toggler-class {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 30px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  /* Rotate first bar */
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  /* Fade out the second bar */
+  .change .bar2 {opacity: 0;}
+  
+  /* Rotate last bar */
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
 
-/* header navbar */
-#nav {
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-}
-
-/* header search bar section */
 #search-bar {
     max-width: 600px;
 }
@@ -34,16 +53,20 @@ body {
     border-radius: 20px;
 }
 
-/* meal card */
+.results{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
 #card {
-    background-color: #FF3044;
-    padding: 10px;
+    padding: 5px;
     color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    max-height: 500px;
 }
 
 #card img {
-    border-radius: 50%;
+    border-radius: 5%;
 }
 
 /* meal details container */
@@ -51,7 +74,6 @@ body {
     width: 100%;
     padding: 20px;
     border-radius: 20px;
-    background-color:#FF3044 ;
 }
 #meal-header{
     width: 70%;
